@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #121c27;
+    font-family: 'Bad Script', cursive;
+}
+h1{
+    position: absolute;
+    padding-bottom: 500px;
+    color: rgb(180, 180, 180);
+    font-size: 4rem;
+}
+h1 span{
+    display: table-cell;
+    margin: 5px;
+    padding: 5px;
+    animation: animate 2s linear infinite;
+}
+h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(4){
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(5){
+    animation-delay: 0.8s;
+}
+h1 span:nth-child(6){
+    animation-delay: 1s;
+}
+@keyframes animate{
+    0%,100%{
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #cf86ab,
+                    0 0 20px #cf86ab,
+                    0 0 40px #cf86ab,
+                    0 0 80px #cf86ab,
+                    0 0 120px #cf86ab,
+                    0 0 200px #cf86ab,
+                    0 0 300px #cf86ab,
+                    0 0 400px #cf86ab;
+    }
+    5%,95%{
+        color: rgb(180, 180, 180);;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+.heart{
+    height: 90px;
+    width: 90px;
+    background: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.9s linear infinite;
+}
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    80%{
+        transform: rotate(-45deg) scale(0.9);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+.heart:before{
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #f20044;
+}
+.heart:after{
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044;
+}
+
