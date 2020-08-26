@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -7,19 +12,34 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #121c27;
+    background: linear-gradient(125deg, #88e6af, #287cb4, #eb503f, #7a3996);
+    background-size: 300%;
+    position: relative;
     font-family: 'Bad Script', cursive;
+    animation: change 8s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 h1{
     position: absolute;
-    padding-bottom: 500px;
-    color: rgb(180, 180, 180);
-    font-size: 4rem;
+    padding-bottom: 600px;
+    color: rgb(220, 220, 220);
+    font-size: 5rem;
 }
 h2{
     position: absolute;
-    padding-top: 500px;
-    color: rgb(180, 180, 180);
+    padding-top: 550px;
+    color: rgb(220, 220, 220);
+    letter-spacing: 0.1em;
     font-size: 2rem;
 }
 h1 span{
@@ -60,10 +80,20 @@ h1 span:nth-child(6){
                     0 0 400px #cf86ab;
     }
     5%,95%{
-        color: rgb(180, 180, 180);;
+        color: rgb(220, 220, 220);;
         filter: blur(0px);
         text-shadow: none;
     }
+}
+.countup{
+    position: absolute;
+    padding-bottom: 55px;
+    color: rgb(200, 200, 200);
+    font-size: 3.5em;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .heart{
     height: 90px;
@@ -71,18 +101,18 @@ h1 span:nth-child(6){
     background: #f20044;
     position: relative;
     transform: rotate(-45deg);
-    box-shadow: -10px 10px 90px #f20044;
+    box-shadow: -10px 10px 100px #f20044;
     animation: heart 0.9s linear infinite;
 }
 @keyframes heart{
     0%{
-        transform: rotate(-45deg) scale(1.0);
+        transform: rotate(-45deg) scale(1.9);
     }
     80%{
-        transform: rotate(-45deg) scale(0.9);
+        transform: rotate(-45deg) scale(1.75);
     }
     100%{
-        transform: rotate(-45deg) scale(0.8);
+        transform: rotate(-45deg) scale(1.5);
     }
 }
 .heart:before{
@@ -93,7 +123,7 @@ h1 span:nth-child(6){
     background: #f20044;
     top: -50%;
     border-radius: 50px;
-    box-shadow: -10px -10px 90px #f20044;
+    box-shadow: -10px -10px 200px #f20044;
 }
 .heart:after{
     content: '';
@@ -103,6 +133,6 @@ h1 span:nth-child(6){
     background: #f20044;
     right: -50%;
     border-radius: 50px;
-    box-shadow: 10px 10px 90px #f20044;
+    box-shadow: 10px 10px 200px #f20044;
 }
 
