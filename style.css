@@ -37,7 +37,7 @@ h1{
 }
 h2{
     position: absolute;
-    padding-top: 550px;
+    padding-top: 500px;
     color: rgb(220, 220, 220);
     letter-spacing: 0.1em;
     font-size: 2rem;
@@ -87,7 +87,7 @@ h1 span:nth-child(6){
 }
 .countup{
     position: absolute;
-    padding-bottom: 55px;
+    padding-bottom: 90px;
     color: rgb(200, 200, 200);
     font-size: 3.5em;
     font-weight: 300;
@@ -99,7 +99,7 @@ h1 span:nth-child(6){
     height: 90px;
     width: 90px;
     background: #f20044;
-    position: relative;
+    position: absolute;
     transform: rotate(-45deg);
     box-shadow: -10px 10px 100px #f20044;
     animation: heart 0.9s linear infinite;
@@ -134,5 +134,50 @@ h1 span:nth-child(6){
     right: -50%;
     border-radius: 50px;
     box-shadow: 10px 10px 200px #f20044;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 800px;
+}
+.container a{
+    position: relative;
+    width: 300px;
+    height: 70px;
+    margin: 10px 0;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    color: rgb(220, 220, 220);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.container a:hover{
+    color: #fff;
+}
+.container a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: url(btn-bg1.png);
+    background-size: cover;
+    transform-origin: left;
+    transition: 0.5s;
+}
+.container a:hover:before{
+    width: 100%;
+}
+.container a span{
+    position: relative;
+    z-index: 1;
+
 }
 
