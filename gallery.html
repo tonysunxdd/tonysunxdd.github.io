@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallerystyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="gallery-section">
+        <div class="inner-width">
+            <h1>Memories</h1>
+            <div class="border"></div>
+            <div class="gallery">
+                <a href="img/1.jpeg" class="image">
+                    <img src="img/1.jpeg" alt="">
+                </a>
+                <a href="img/2.jpeg" class="image">
+                    <img src="img/2.jpeg" alt="">
+                </a>
+                <a href="img/3.jpeg" class="image">
+                    <img src="img/3.jpeg" alt="">
+                </a>
+                <a href="img/4.jpeg" class="image">
+                    <img src="img/4.jpeg" alt="">
+                </a>
+                <a href="img/5.jpeg" class="image">
+                    <img src="img/5.jpeg" alt="">
+                </a>
+                <a href="img/6.jpeg" class="image">
+                    <img src="img/6.jpeg" alt="">
+                </a>
+                <a href="img/7.jpeg" class="image">
+                    <img src="img/7.jpeg" alt="">
+                </a>
+                <a href="img/8.jpeg" class="image">
+                    <img src="img/8.jpeg" alt="">
+                </a>
+                <a href="img/9.jpeg" class="image">
+                    <img src="img/9.jpeg" alt="">
+                </a>
+                <a href="img/10.jpeg" class="image">
+                    <img src="img/10.jpeg" alt="">
+                </a>
+                <a href="img/11.jpeg" class="image">
+                    <img src="img/11.jpeg" alt="">
+                </a>
+                <a href="img/12.jpeg" class="image">
+                    <img src="img/12.jpeg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(".gallery").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery:{
+                enabled:true
+            }
+        });
+    </script>
+
+</body>
+</html>
